@@ -301,7 +301,7 @@ model = load_model()
 # TITLE
 # ============================================================
 
-st.title(" Disease Risk Classifier")
+st.title(" Diabetes Risk Classifier")
 
 st.write(
     "Enter the health information below to estimate the "
