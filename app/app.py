@@ -11,7 +11,7 @@ from pathlib import Path
 # ============================================================
 
 st.set_page_config(
-    page_title="Disease Risk Classifier",
+    page_title="Diabetes Risk Classifier",
     
     layout="centered",
     initial_sidebar_state="collapsed"
