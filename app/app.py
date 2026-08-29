@@ -602,22 +602,24 @@ if st.button("Calculate Risk"):
 
     st.header("Risk Assessment")
 
-st.markdown(
-f"""
-<div class="result-box">
-<div class="small-note">
-Model-predicted probability
-</div>
-<div class="risk-number">
-{probability * 100:.1f}%
-</div>
-<div class="small-note">
-Classification threshold: {THRESHOLD:.2f}
-</div>
-</div>
-""",
-unsafe_allow_html=True
-)
+    st.markdown(
+        f"""
+    <div class="result-box">
+    <div class="small-note">
+    Model-predicted probability
+    </div>
+    <div class="risk-number">
+    {probability * 100:.1f}%
+    </div>
+    <div class="small-note">
+    Classification threshold: {THRESHOLD:.2f}
+    </div>
+    </div>
+    """,
+        unsafe_allow_html=True
+    )
+
+    st.progress(float(probability))
 
     st.progress(float(probability))
 
